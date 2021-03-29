@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upsert Try</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p>Try to add random numbers</p>
+    <input onclick="this.value=''" placeholder="input a random name" type="text" id="name">
+    <select id="year">
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+    </select>
+    <input onclick="this.value=''" placeholder="enter a random number" type="number" id="number">
+    <button id="submit" aria-roledescription="button to submit entered data">Submit</button>
+
+    <div id="doc-details"></div>
+</body>
+<script src="./scripts/pouchdb-7.2.1.min.js"></script>
+<script src="./scripts/pouchdb.upsert.min.js"></script>
+<script src="index.js"></script>
+</html>
